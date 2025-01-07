@@ -8,7 +8,10 @@ namespace Assignment18
         {
             Character soldier = new Soldier();
             Character officer = new Officer("Captain", 90, new Position(10, 5, 0));
-            Character[] characters = { soldier, officer };
+
+            Character[] characters = new Character[2];
+            characters[0] = soldier;
+            characters[1] = officer;
 
             for (int i = 0; i < characters.Length; i++)
             {
